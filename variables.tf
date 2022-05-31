@@ -51,3 +51,12 @@ variable "rules" {
 
 
 }
+
+locals {
+  userdata = {
+    project_name = var.project_name,
+    bucket_name  = var.bucket_name,
+    host_name    = var.host_name,
+  }
+}
+
